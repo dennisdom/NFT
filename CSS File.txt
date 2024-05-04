@@ -46,3 +46,14 @@ footer {
     padding: 10px;
     text-align: center;
 }
+
+/* Adjustments for image items to be side by side */
+.items {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.item {
+    flex: 1 1 20%;
+    margin: 0 10px;
+}
