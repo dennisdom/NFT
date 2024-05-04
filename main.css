@@ -83,19 +83,19 @@ input, select, textarea {
 	}
 
 	body {
-		background-image: url("images/overlay.png"), -moz-linear-gradient(top, rgba(0, 0, 0, 0) 75%, rgba(0, 0, 0, 0.65)), url("../../images/bg.jpg");
-		background-image: url("images/overlay.png"), -webkit-linear-gradient(top, rgba(0, 0, 0, 0) 75%, rgba(0, 0, 0, 0.65)), url("../../images/bg.jpg");
-		background-image: url("images/overlay.png"), -ms-linear-gradient(top, rgba(0, 0, 0, 0) 75%, rgba(0, 0, 0, 0.65)), url("../../images/bg.jpg");
-		background-image: url("images/overlay.png"), linear-gradient(top, rgba(0, 0, 0, 0) 75%, rgba(0, 0, 0, 0.65)), url("../../images/bg.jpg");
-		background-position: top left, bottom left, auto;
-		background-size: auto, 100% 100%, cover;
-		background-attachment: fixed;
-		background-repeat: repeat, no-repeat, auto;
-		position: relative;
-		background-color: #150C07;
-		line-height: 1.75em;
-		overflow-x: hidden;
-		overflow-y: auto;
+		background-image: url("images/overlay.png"), -moz-linear-gradient(top, rgba(0, 0, 0, 0) 75%, rgba(0, 0, 0, 0.65)), url("../../images/bg.jpg"), url("NFT/images/Blood.jpeg");
+   	 	background-image: url("images/overlay.png"), -webkit-linear-gradient(top, rgba(0, 0, 0, 0) 75%, rgba(0, 0, 0, 0.65)), url("../../images/bg.jpg"), url("NFT/images/Blood.jpeg");
+    		background-image: url("images/overlay.png"), -ms-linear-gradient(top, rgba(0, 0, 0, 0) 75%, rgba(0, 0, 0, 0.65)), url("../../images/bg.jpg"), url("NFT/images/Blood.jpeg");
+   	 	background-image: url("images/overlay.png"), linear-gradient(top, rgba(0, 0, 0, 0) 75%, rgba(0, 0, 0, 0.65)), url("../../images/bg.jpg"), url("NFT/images/Blood.jpeg");
+   	 	background-position: top left, bottom left, auto, auto; /* Add another "auto" for the position of the new image */
+   	 	background-size: auto, 100% 100%, cover, cover; /* Add another "cover" for the size of the new image */
+  	  	background-attachment: fixed;
+   		background-repeat: repeat, no-repeat, auto, no-repeat; /* Add "no-repeat" for the new image */
+    		position: relative;
+    		background-color: #150C07;
+    		line-height: 1.75em;
+    		overflow-x: hidden;
+    		overflow-y: auto;
 	}
 #main .items {
     display: flex;
