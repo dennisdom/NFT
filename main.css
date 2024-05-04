@@ -235,6 +235,22 @@ input, select, textarea {
 		position: relative;
 		text-decoration: none;
 	}
+#main .items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; /* Distribute items evenly */
+}
+
+#main .item {
+    flex: 1 1 calc(33.33% - 10px); /* Adjust width of each item */
+    margin-bottom: 20px; /* Add some space below each item */
+}
+
+@media screen and (max-width: 736px) {
+    #main .item {
+        flex: 1 1 calc(50% - 10px); /* Adjust width of each item on smaller screens */
+    }
+}
 
 		.icon:before {
 			-moz-osx-font-smoothing: grayscale;
@@ -829,20 +845,5 @@ input, select, textarea {
 				.poptrox-popup .nav-previous {
 					display: none !important;
 				}
-#main .items {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between; /* Distribute items evenly */
-}
 
-#main .item {
-    flex: 1 1 calc(33.33% - 10px); /* Adjust width of each item */
-    margin-bottom: 20px; /* Add some space below each item */
-}
-
-@media screen and (max-width: 736px) {
-    #main .item {
-        flex: 1 1 calc(50% - 10px); /* Adjust width of each item on smaller screens */
-    }
-}
 		}
